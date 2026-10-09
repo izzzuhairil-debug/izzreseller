@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#080808">
+<title>IZZRESELLER | Kedai Akaun Free Fire</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#080808;color:#f5f5f5;font-family:Arial,sans-serif}
+.wrap{width:min(1000px,92%);margin:auto}header{padding:17px 0;border-bottom:1px solid #292929;background:#090909}
+.logo{font-size:23px;font-weight:900;color:#fff;text-decoration:none}.logo span,h1 span,h2 span{color:#ff6a00}
+.hero{padding:45px 0;display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.pill{color:#ffb17a;background:#2b160b;border:1px solid #60300f;border-radius:20px;padding:7px 11px;font-size:12px;font-weight:bold}
+h1{font-size:clamp(38px,8vw,68px);line-height:1;margin:18px 0}p{line-height:1.6;color:#aaa}
+.card{background:#151515;border:1px solid #303030;border-radius:15px;padding:20px;margin-bottom:16px}
+.big{font-size:60px}.btn{display:inline-block;background:linear-gradient(120deg,#ff6a00,#ff3030);color:white;text-decoration:none;border:0;border-radius:9px;padding:12px 15px;font-weight:bold;cursor:pointer}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}h2{margin:10px 0 20px}.product-icon{font-size:45px;text-align:center;padding:22px;background:#291509;border-radius:10px}
+.price{font-size:20px;font-weight:bold;margin:12px 0}.muted{color:#aaa;font-size:14px;line-height:1.6}
+footer{border-top:1px solid #292929;margin-top:35px;padding:25px 0;color:#999;font-size:13px}
+@media(max-width:650px){.hero{grid-template-columns:1fr}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="#">IZZ<span>RESELLER</span></a></div></header>
+<main class="wrap">
+<section class="hero">
+<div><span class="pill">KEDAI AKAUN FREE FIRE</span><h1>IZZ<span>RESELLER</span></h1>
+<p>Pilih akaun Free Fire yang kau minat. Tekan butang WhatsApp untuk tanya harga dan stok.</p>
+<a class="btn" href="#produk">🔥 Lihat produk</a></div>
+<div class="card"><div class="big">🎮</div><h2>Gaming Account Store</h2><p>Simple • Pantas • Mudah dihubungi</p></div>
+</section>
+<section id="produk"><h2>Senarai <span>Akaun FF</span></h2><p>Gantikan harga dan butiran contoh di bawah dengan maklumat sebenar.</p>
+<div class="grid">
+<div class="card"><div class="product-icon">🔥</div><h3>Akaun Free Fire #01</h3><div class="muted">Level: belum diisi<br>Skin/item: belum diisi</div><div class="price">RM --</div><button class="btn" onclick="order('Akaun Free Fire #01')">Tanya di WhatsApp</button></div>
+<div class="card"><div class="product-icon">⚡</div><h3>Akaun Free Fire #02</h3><div class="muted">Level: belum diisi<br>Skin/item: belum diisi</div><div class="price">RM --</div><button class="btn" onclick="order('Akaun Free Fire #02')">Tanya di WhatsApp</button></div>
+<div class="card"><div class="product-icon">💎</div><h3>Akaun Free Fire #03</h3><div class="muted">Level: belum diisi<br>Skin/item: belum diisi</div><div class="price">RM --</div><button class="btn" onclick="order('Akaun Free Fire #03')">Tanya di WhatsApp</button></div>
+</div></section>
+<div class="card muted"><b style="color:white">Nota:</b> Sebelum digunakan, tukar nombor WhatsApp contoh dalam kod dan masukkan harga/butiran sebenar. Jangan kongsi kata laluan atau kod pemulihan akaun.</div>
+</main>
+<footer><div class="wrap">© 2026 IZZRESELLER • Kedai bebas, tidak berafiliasi dengan Garena</div></footer>
+<script>
+const WHATSAPP_NUMBER = "60123456789"; // Tukar kepada nombor kau, format 60xxxxxxxxx
+function order(product){const msg=`Assalamualaikum, saya berminat dengan ${product}. Boleh tahu harga dan stok?`;window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(msg)}`,"_blank");}
+</script>
+</body>
+</html>
